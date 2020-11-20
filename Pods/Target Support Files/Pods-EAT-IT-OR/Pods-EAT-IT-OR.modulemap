@@ -1,0 +1,6 @@
+framework module Pods_EAT_IT_OR {
+  umbrella header "Pods-EAT-IT-OR-umbrella.h"
+
+  export *
+  module * { export * }
+}

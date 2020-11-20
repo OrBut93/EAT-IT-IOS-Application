@@ -1,0 +1,6 @@
+framework module Pods_EAT_IT_ORTests {
+  umbrella header "Pods-EAT-IT-ORTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
