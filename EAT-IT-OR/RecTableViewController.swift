@@ -14,27 +14,15 @@ class RecTableViewController: UITableViewController {
     var data = [Recommend]()
     
     override func viewDidLoad() {
-            
         super.viewDidLoad()
-        
-//        self.refreshControl = UIRefreshControl()
-//        self.refreshControl?.addTarget(self, action: #selector(reloadData), for: .valueChanged)
-//
         
         Model.instance.getAllRecommend{ (_data:[Recommend]?) in
         if (_data != nil){
             self.data = _data!
             self.tableView.reloadData()
         }
-//            ModelEvents.recommendDataEvent.observe {
-//                self.refreshControl?.beginRefreshing()
-//                self.reloadData();
-//            }
-//        self.refreshControl?.beginRefreshing()
-//        reloadData();
     }
     }
-        
 
     @objc func reloadData (){
 
@@ -44,24 +32,13 @@ class RecTableViewController: UITableViewController {
                     self.tableView.reloadData()
                 }
                 self.refreshControl?.endRefreshing()
-
         }
     }
 
-
-    // MARK: - Table view data source
-
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 1
-//    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return data.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:RecViewCell = tableView.dequeueReusableCell(withIdentifier: "RecCell", for: indexPath) as! RecViewCell
         

@@ -36,29 +36,9 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
                 self.navigationController?.popToRootViewController(animated: true)
             }
         }
-
-//        var selectedImage:UIImage?
-//
-//    @IBAction func addImage(_ sender: Any) {        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.photoLibrary) {
-//            let imagePicker = UIImagePickerController()
-//            imagePicker.delegate = self
-//            imagePicker.sourceType = UIImagePickerController.SourceType.photoLibrary;
-//            imagePicker.allowsEditing = true
-//            self.present(imagePicker, animated: true, completion: nil)
-//        }
-//
-//    }
-//
-//    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-//        selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage;
-//        self.imageView.image = selectedImage;
-//        dismiss(animated: true, completion: nil);
-//    }
-//
-
+    
         @IBAction func register(_ sender: UIButton){
             print("register btn")
-////            addPicbtn.isEnabled = false
             registerbtn.isHidden = true
             activity.isHidden = false
             msg.isHidden = true
@@ -68,11 +48,10 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
                     self.showMsg(error!)
                     self.activity.isHidden = true
                     self.registerbtn.isHidden = false
-////                    self.addPicbtn.isEnabled = true
                 }
                 else{
                     let user = User(name: self.nameField.text!, email: self.emailField.text!, psw: self.pswField.text!)
-                        Model.instance.register(user:user){(success) in
+                    Model.instance.register(user:user){(success) in
                                 if (success) {
                                     self.activity.isHidden = true
                                     self.registerbtn.isHidden = false
@@ -86,12 +65,7 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
                             }
                     
                             return
-//                        }
 
-//                    Model.instance.saveImage(image: selectedImage) {(url) in
-//                        new_user.avatar = url
-//                        self.regAddition(user: new_user)
-//                    }
                 }
             }
             

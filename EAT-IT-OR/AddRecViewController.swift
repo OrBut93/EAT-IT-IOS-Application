@@ -68,7 +68,6 @@ class AddRecViewController: UIViewController, UIImagePickerControllerDelegate, U
         self.present(imagePicker, animated: true, completion: nil)
        }
         addPhotos.isEnabled = true;
-    
     }
 
     func getString() -> String {
@@ -78,7 +77,6 @@ class AddRecViewController: UIViewController, UIImagePickerControllerDelegate, U
     
         return newID
     }
-    
     
     @IBAction func BtnSave(_ sender: Any) {
         
@@ -131,11 +129,7 @@ class AddRecViewController: UIViewController, UIImagePickerControllerDelegate, U
         savebtn.isEnabled = true
         activity.isHidden = true
     }
-//        else {
-//            let alert = UIAlertController(title: "Error", message: "You have to share with us photos :)", preferredStyle: .alert)
-//            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-//            self.present(alert, animated: true, completion: nil)
-//        }
+
     
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

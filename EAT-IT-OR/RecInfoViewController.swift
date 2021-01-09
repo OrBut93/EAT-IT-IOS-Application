@@ -19,9 +19,7 @@ class RecInfoViewController: UIViewController {
     @IBOutlet weak var descriptionInfo: UILabel!
     @IBOutlet weak var editbtn: UIButton!
     @IBOutlet weak var deletebtn: UIButton!
-    
-    
-    
+        
     var recommend: Recommend?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,23 +29,19 @@ class RecInfoViewController: UIViewController {
         titleInfo.text = recommend?.title
         userNameInfo.text = recommend?.ownerName
         locationInfo.text = recommend?.location
+        descriptionInfo.text = recommend?.description
         avatarInfo.image = UIImage(named: "avatar")
         if(recommend?.image != "")
         {
             avatarInfo.kf.setImage(with: URL(string: recommend!.image))
         }
-
     }
     
     @IBAction func edit(_ sender: Any) {
         if (recommend != nil) {
-            
             performSegue(withIdentifier: "editRecommendSegue", sender: self)
         }
     }
-    
-    
-    
     
     @IBAction func deletepost(_ sender: Any) {
         if (recommend != nil) {

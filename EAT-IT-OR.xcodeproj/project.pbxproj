@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3CF4EE9C295D67CF605C24E2 /* Pods_EAT_IT_OR_EAT_IT_ORUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F40154D2FB407731FF85418 /* Pods_EAT_IT_OR_EAT_IT_ORUITests.framework */; };
 		604A8252F566530594FDF6ED /* Pods_EAT_IT_OR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1F478A3915687ED87AF9D5 /* Pods_EAT_IT_OR.framework */; };
+		840C282725A080D90006DAA7 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C282625A080D90006DAA7 /* UserViewController.swift */; };
 		844BD6BA24B0ABBD00E4F31E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BD6B924B0ABBD00E4F31E /* AppDelegate.swift */; };
 		844BD6BC24B0ABBD00E4F31E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BD6BB24B0ABBD00E4F31E /* SceneDelegate.swift */; };
 		844BD6C124B0ABBD00E4F31E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844BD6BF24B0ABBD00E4F31E /* Main.storyboard */; };
@@ -33,7 +34,6 @@
 		844BD70C24B0B13A00E4F31E /* FirebaseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BD70424B0B13900E4F31E /* FirebaseStorage.swift */; };
 		844BD70D24B0B13A00E4F31E /* Recommend+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BD70524B0B13900E4F31E /* Recommend+Firebase.swift */; };
 		844BD70F24B0B19D00E4F31E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 844BD70E24B0B19700E4F31E /* libsqlite3.0.tbd */; };
-		844BD71124B0D06D00E4F31E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BD71024B0D06D00E4F31E /* ProfileViewController.swift */; };
 		866DF5077D4A87E8ED5E33F7 /* Pods_EAT_IT_ORTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064AE02B98438AD816C98B4F /* Pods_EAT_IT_ORTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +60,7 @@
 		657ABDD7D326C1AE366AA898 /* Pods-EAT-IT-OR-EAT-IT-ORUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAT-IT-OR-EAT-IT-ORUITests.release.xcconfig"; path = "Target Support Files/Pods-EAT-IT-OR-EAT-IT-ORUITests/Pods-EAT-IT-OR-EAT-IT-ORUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6A5829CDE0AECB7689B15468 /* Pods-EAT-IT-OR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAT-IT-OR.debug.xcconfig"; path = "Target Support Files/Pods-EAT-IT-OR/Pods-EAT-IT-OR.debug.xcconfig"; sourceTree = "<group>"; };
 		6AD18FEE02250B7F6BDA484E /* Pods-EAT-IT-OR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAT-IT-OR.release.xcconfig"; path = "Target Support Files/Pods-EAT-IT-OR/Pods-EAT-IT-OR.release.xcconfig"; sourceTree = "<group>"; };
+		840C282625A080D90006DAA7 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		844BD6B624B0ABBD00E4F31E /* EAT-IT-OR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EAT-IT-OR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		844BD6B924B0ABBD00E4F31E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844BD6BB24B0ABBD00E4F31E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,7 +92,6 @@
 		844BD70424B0B13900E4F31E /* FirebaseStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirebaseStorage.swift; path = "EAT-IT-OR/g/FirebaseStorage.swift"; sourceTree = SOURCE_ROOT; };
 		844BD70524B0B13900E4F31E /* Recommend+Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recommend+Firebase.swift"; path = "EAT-IT-OR/g/Recommend+Firebase.swift"; sourceTree = SOURCE_ROOT; };
 		844BD70E24B0B19700E4F31E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-		844BD71024B0D06D00E4F31E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8B9E293C42C8615B422E453D /* Pods-EAT-IT-OR-EAT-IT-ORUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAT-IT-OR-EAT-IT-ORUITests.debug.xcconfig"; path = "Target Support Files/Pods-EAT-IT-OR-EAT-IT-ORUITests/Pods-EAT-IT-OR-EAT-IT-ORUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BE1F478A3915687ED87AF9D5 /* Pods_EAT_IT_OR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EAT_IT_OR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8B7915954C351AE745E441 /* Pods-EAT-IT-ORTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAT-IT-ORTests.debug.xcconfig"; path = "Target Support Files/Pods-EAT-IT-ORTests/Pods-EAT-IT-ORTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 				844BD6C424B0ABC600E4F31E /* LaunchScreen.storyboard */,
 				844BD6C724B0ABC600E4F31E /* Info.plist */,
 				844BD6EB24B0AFF900E4F31E /* EAT-IT-OR-Bridging-Header.h */,
-				844BD71024B0D06D00E4F31E /* ProfileViewController.swift */,
+				840C282625A080D90006DAA7 /* UserViewController.swift */,
 			);
 			path = "EAT-IT-OR";
 			sourceTree = "<group>";
@@ -477,7 +477,6 @@
 				844BD6F624B0B0B900E4F31E /* RecTableViewController.swift in Sources */,
 				844BD70A24B0B13A00E4F31E /* Recommend+Sql.swift in Sources */,
 				844BD6F724B0B0B900E4F31E /* RecInfoViewController.swift in Sources */,
-				844BD71124B0D06D00E4F31E /* ProfileViewController.swift in Sources */,
 				844BD70824B0B13A00E4F31E /* Model.swift in Sources */,
 				844BD70C24B0B13A00E4F31E /* FirebaseStorage.swift in Sources */,
 				844BD6F924B0B0B900E4F31E /* AboutViewController.swift in Sources */,
@@ -489,6 +488,7 @@
 				844BD6F824B0B0B900E4F31E /* RecViewCell.swift in Sources */,
 				844BD6FC24B0B0B900E4F31E /* LoginViewController.swift in Sources */,
 				844BD6FA24B0B0B900E4F31E /* AddRecViewController.swift in Sources */,
+				840C282725A080D90006DAA7 /* UserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

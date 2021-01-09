@@ -89,12 +89,12 @@ static func createTable(database: OpaquePointer?){
         sqlite3_finalize(sqlite3_stmt)
         return data
     }
-    
+//    let CurrentUserId = Model.instance.getCurrentUserId()
     static func getUserRecommendFromDb(uid: String)->[Recommend]{
         var sqlite3_stmt: OpaquePointer? = nil
         var data = [Recommend]()
         
-        if (sqlite3_prepare_v2(ModelSql.instance.database,"SELECT * FROM RECOMMENDS WHERE OWNER_ID = ? ORDER BY LAST_UPDATE DESC;",-1,&sqlite3_stmt,nil) == SQLITE_OK){
+        if (sqlite3_prepare_v2(ModelSql.instance.database,"SELECT * from RECOMMENDS WHERE OWNER_ID = ? ORDER BY LAST_UPDATE DESC;",-1,&sqlite3_stmt,nil) == SQLITE_OK){
             
             let ownerId = uid.cString(using: .utf8)
             sqlite3_bind_text(sqlite3_stmt, 1, ownerId,-1,nil);
