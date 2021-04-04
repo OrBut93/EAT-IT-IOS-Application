@@ -497,7 +497,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Dx-Nn-mpI">
-                                <rect key="frame" x="76" y="739" width="71" height="22"/>
+                                <rect key="frame" x="76" y="739" width="40" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="delete" image="trash" catalog="system"/>
                                 <connections>
@@ -512,7 +512,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8C-TO-PkJ">
-                                <rect key="frame" x="44" y="738" width="54" height="24"/>
+                                <rect key="frame" x="44" y="738" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="edit" image="square.and.pencil" catalog="system"/>
@@ -655,6 +655,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="XLJ-Tp-zio"/>
-        <segue reference="aNV-GC-0sf"/>
+        <segue reference="M77-SC-Jd9"/>
     </inferredMetricsTieBreakers>
 </document>
